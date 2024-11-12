@@ -8,11 +8,13 @@ public class TestDriver
         Museum smk = new Museum ("Statens Museum for Kunst", "Sølvtorvet, København");
         Museum fsm = new Museum ("Fyns Stifts Museum", "Jernbanegade, Odense");
         Person lar = new Person ("L.A. Ring","dansk",1854,1933);
+
         Maleri kal = new Maleri ("Kalkemanden",1908,80,65,smk);
         kal.addOphavsmand(lar);
 
         Person cwe = new Person ("C. W. Eckersberg","dansk",1783,1853);
         Maleri rus = new Maleri ("Et russisk linjeskib til ankers ved Helsingør",1828,140,135,fsm);
+
         rus.addOphavsmand(cwe);
         Person køb = new Person ("Christian Købke","dansk",1810,1848);
         Maleri par = new Maleri ("Parti fra Dosseringen mod Nørrebro", 1841,100,85,smk);
@@ -30,6 +32,7 @@ public class TestDriver
         Komposition y = new Komposition("Yesterday",1965,"Rock",211);
         y.addOphavsmand(jl);
         y.addOphavsmand(pm);
+
         Person db = new Person ("David Bowie","britisk",1947,2016);
         Komposition lom = new Komposition("Life on Mars",1971,"Rock",309);
         lom.addOphavsmand(db);
@@ -46,6 +49,5 @@ public class TestDriver
         kvs.add(dff);
     }
 
-}
 }
 

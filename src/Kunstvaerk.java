@@ -37,10 +37,10 @@ public abstract class Kunstvaerk
     public void addOphavsmand(Person p)
     {
         if (antalOphavsmaend < ophavsmand.length)
+        {
         ophavsmand[antalOphavsmaend] = p;
         antalOphavsmaend++;
+        }
     }
-
-
 
 }
