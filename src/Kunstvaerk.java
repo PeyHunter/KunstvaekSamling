@@ -5,18 +5,16 @@ public abstract class Kunstvaerk
     {
     }
 
-
     protected String titel;
     protected int aar;
     protected int antalOphavsmaend = 0;
     protected Person[] ophavsmand = new Person[5];
 
 
-    public Kunstvaerk(String titel, int aar, Person[] ophavsmand)
+    public Kunstvaerk(String titel, int aar)
     {
         this.titel = titel;
         this.aar = aar;
-        this.ophavsmand = ophavsmand;
     }
 
     public String getTitel()
@@ -42,5 +40,7 @@ public abstract class Kunstvaerk
         antalOphavsmaend++;
         }
     }
+
+
 
 }

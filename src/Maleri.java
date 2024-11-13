@@ -11,7 +11,7 @@ public class Maleri extends Kunstvaerk
 
     public Maleri(String titel, int aar, int laengde, int bredde, Museum museum)
     {
-        super(titel, aar, new Person[5]);
+        super(titel, aar);
         this.laengde = laengde;
         this.bredde = bredde;
         this.museum = museum;

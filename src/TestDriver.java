@@ -47,6 +47,8 @@ public class TestDriver
         dff.addOphavsmand(hs);
         kvs.add(l);
         kvs.add(dff);
+
+        System.out.println(kvs.getKunstvaerker());
     }
 
 }

@@ -12,7 +12,6 @@ public class KunstvaerkSamling
 
 
 
-
     public void add(Kunstvaerk k)
     {
         kunstvaerker.add(k);
@@ -22,5 +21,7 @@ public class KunstvaerkSamling
     {
         return kunstvaerker;
     }
+
+
 
 }

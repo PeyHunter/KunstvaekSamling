@@ -9,7 +9,7 @@ public class Bog extends Kunstvaerk
 
     public Bog(String titel, int aar, String genre, int antalSider)
     {
-        super(titel, aar, new Person[5]);
+        super(titel, aar);
         this.genre = genre;
         this.antalSider = antalSider;
     }

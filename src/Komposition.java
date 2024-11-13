@@ -9,12 +9,10 @@ public class Komposition extends Kunstvaerk
 
     public Komposition(String titel, int aar, String genre, int spilletid)
     {
-        super(titel, aar, new Person[5]);  // Call the Kunstvaerk constructor
+        super(titel, aar);  // Call the Kunstvaerk constructor
         this.genre = genre;
         this.spilletid = spilletid;
     }
-
-
 
 
     public String getGenre(){
