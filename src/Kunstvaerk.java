@@ -17,6 +17,7 @@ public abstract class Kunstvaerk
         this.aar = aar;
     }
 
+
     public String getTitel()
     {
         return titel;
@@ -27,6 +28,12 @@ public abstract class Kunstvaerk
         return aar;
     }
 
+    public String getPersonNavn()
+    {
+        return ophavsmand[0].getNavn();
+    }
+
+
     public Person[] getOphavsmand()
     {
         return ophavsmand;
@@ -36,11 +43,15 @@ public abstract class Kunstvaerk
     {
         if (antalOphavsmaend < ophavsmand.length)
         {
-        ophavsmand[antalOphavsmaend] = p;
-        antalOphavsmaend++;
+            ophavsmand[antalOphavsmaend] = p;
+            antalOphavsmaend++;
         }
     }
 
+    public int getAntalOphavsmaend()
+    {
+        return antalOphavsmaend;
+    }
 
 
 }
