@@ -19,4 +19,5 @@ public class Museum
     public String getAdresse(){
         return adresse;
     }
+
 }

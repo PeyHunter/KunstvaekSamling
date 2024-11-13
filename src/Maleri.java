@@ -17,6 +17,12 @@ public class Maleri extends Kunstvaerk
         this.museum = museum;
     }
 
+    public Museum getMuseum()
+    {
+        return museum;
+    }
+
+
 
 
 }

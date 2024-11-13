@@ -48,7 +48,11 @@ public class TestDriver
         kvs.add(l);
         kvs.add(dff);
 
-        System.out.println(kvs.getKunstvaerker());
+       kvs.findSangeMedFlereKomponister();
+       kvs.findMalerierPaaMuseum("Statens Museum for Kunst");
+       kvs.beregnAntalLaesteSider();
+       kvs.skrivBogNavn();
+
     }
 
 }
