@@ -39,6 +39,8 @@ public abstract class Kunstvaerk
         return ophavsmand;
     }
 
+
+
     public void addOphavsmand(Person p)
     {
         if (antalOphavsmaend < ophavsmand.length)

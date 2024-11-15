@@ -1,6 +1,8 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+
+
 public class KunstvaerkSamling
 {
     public KunstvaerkSamling()
@@ -9,8 +11,6 @@ public class KunstvaerkSamling
 
 
     protected ArrayList<Kunstvaerk> kunstvaerker = new ArrayList<>();
-
-
 
 
     public void add(Kunstvaerk k)
@@ -24,44 +24,18 @@ public class KunstvaerkSamling
     }
 
 
-
-    public void udskrivKunstvaerker() {
-        for (int i = 0; i < kunstvaerker.size(); i++) {
+    public void udskrivKunstvaerker()
+    {
+        for (int i = 0; i < kunstvaerker.size(); i++)
+        {
             Kunstvaerk k = kunstvaerker.get(i);
 
             System.out.println(
                     " Værk " + k.getTitel() +
-                    " Aar " + k.getAar() +
-                    " ophavsman: " + k.getPersonNavn());
+                            " Aar " + k.getAar() +
+                            " ophavsman: " + k.getPersonNavn());
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public void findSangeMedFlereKomponister()
@@ -113,9 +87,9 @@ public class KunstvaerkSamling
         for (int i = 0; i < kunstvaerker.size(); i++)
         {
             Kunstvaerk k = kunstvaerker.get(i);
-            if (k instanceof Bog)
+            if (k instanceof Bog b)
             {
-                Bog b = (Bog) k;
+               // Bog b = (Bog) k; Man kan åbenbart difinerer Bog b, i overstående linje ^
                 totalsider += b.getAntalSider();
             }
         }
